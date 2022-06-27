@@ -50,6 +50,27 @@ Clonaremos el proyecto base de Ontimize Web dentro de nuestro proyecto del back 
 - IP: 45.84.210.174
 - Port: 65432
 
+## FAQ
+
+### Error lanzando la aplicación de Ontimize Web (npm start)
+
+Si tenéis un error como este:
+
+```js
+chunk {vendor} vendor.js, vendor.js.map (vendor) 347 kB [initial] [rendered]
+Date: 2022-06-27T12:40:29.494Z - Hash: 35f9ace13f4c0a65716c - Time: 12865ms
+ERROR in node_modules/ontimize-web-ngx/lib/components/o-service-base-component.class.d.ts:101:40 - error TS2314: Generic type 'AbstractOServiceBaseComponent<T>' requires 1 type argument(s).
+101     static ngBaseDef: ɵngcc0.ɵɵBaseDef<AbstractOServiceBaseComponent>;
+                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+node_modules/ontimize-web-ngx/lib/components/o-service-component.class.d.ts:119:40 - error TS2314: Generic type 'AbstractOServiceComponent<T>' requires 1 type argument(s).
+119     static ngBaseDef: ɵngcc0.ɵɵBaseDef<AbstractOServiceComponent>;
+                                           ~~~~~~~~~~~~~~~~~~~~~~~~~
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+```
+
+Debéis lanzar el siguiente comando `npm cache clean --force` y eliminar la carpeta de `node_modules`.
+Hecho esto volvemos a lanzar el `npm install` y luego el `npm start y ya debería funcionar.`
+
 ## Enlaces interesantes
 
 ### Sobre lambdas en Java
@@ -57,7 +78,6 @@ Clonaremos el proyecto base de Ontimize Web dentro de nuestro proyecto del back 
 - [Get a Taste of Lambdas and Get Addicted to Streams by Venkat Subramaniam](https://www.youtube.com/watch?v=1OpAgZvYXLQ)
 - [Exploring Collectors by Venkat Subramaniam](https://www.youtube.com/watch?v=pGroX3gmeP8)
 - [Functional Programming with Java 8 by Venkat Subramaniam](https://www.youtube.com/watch?v=15X0qFtBqiQ)
-
 
 ### Metodologías ágiles
 
