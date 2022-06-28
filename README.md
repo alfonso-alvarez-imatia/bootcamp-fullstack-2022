@@ -82,3 +82,7 @@ Hecho esto volvemos a lanzar el `npm install` y luego el `npm start y ya deberí
 ### Metodologías ágiles
 
 - [Planning poker free](https://www.planitpoker.com/)
+
+### Workflow de github con visual studio code
+
+- [How to Create a GitHub Workflow Using Visual Studio Code](https://key2consulting.com/github-workflow-visual-studio/)
