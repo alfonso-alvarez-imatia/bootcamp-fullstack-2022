@@ -18,8 +18,11 @@ git help -a
 ### Fundamentales (local)
 
 > RECORADAR LOS 3 ESPACIOS DE TRABAJO EN GIT
+>
 >   STAGED -> lo que se va a committear (aparece en verdecito en el git bash)
+>
 >   UNSTAGED or NOT STAGED -> cambios que tenemos en ficheros ya trackeados
+>
 >   UNTRACKED -> ficheros que todavía no han sido trackeados
 
 ```sh
