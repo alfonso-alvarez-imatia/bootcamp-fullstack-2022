@@ -1,8 +1,6 @@
-# BOOTCAMP FULLSTACK 2022
+# BOOTCAMP FULLSTACK 2022 - FAQ
 
-## FAQ
-
-### Error lanzando la aplicación de Ontimize Web (npm start)
+## Error lanzando la aplicación de Ontimize Web (npm start)
 
 Si tenéis un error como este:
 
@@ -21,7 +19,7 @@ node_modules/ontimize-web-ngx/lib/components/o-service-component.class.d.ts:119:
 Debéis lanzar el siguiente comando `npm cache clean --force` y eliminar la carpeta de `node_modules`.
 Hecho esto volvemos a lanzar el `npm install` y luego el `npm start` y ya debería funcionar.
 
-### ¿Cómo hacer debug `mvn spring-boot:run`?
+## ¿Cómo hacer debug `mvn spring-boot:run`?
 
 Para IntelliJ hay que meter esto como parámetros en la *Run Configuration* de Maven:
 `"-Dspring-boot.run.jvmArguments=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"`. Luego solo hay que lanzar en modo debug y en log de
@@ -29,7 +27,7 @@ la consola nos aparecerá una nueva seccción con una opción de *Attach Debugge
 
 TODO: PARA ECLIPSE.
 
-### ¿Cómo hacer debug en el VSCode para Angular?
+## ¿Cómo hacer debug en el VSCode para Angular?
 
 Se debe descargar la extensión *Debugger for Chrome*, como está deprecada hay que instalar la extensión JavaScript Debugger. Luego hay que ir a la sección de
 *Run and Debug* que está en el menú lateral del VSCode. Hay habrá una opción para crear un `launch.json`. Esto nos creará una carpeta llamada .vscode y dentro
@@ -48,11 +46,11 @@ aparecerá el fichero. Luego hay que meter está configuración:
 Dentro del *array* de *configurations*. Hecho esto solo hay que lanzar la aplicación normal con `npm start` y luego **ejecutar la nueva configuración**
 desde la sección de *Run and Debug*.
 
-### No puedo hacer operaciones *Create*, *Update* y *Delete* sobre usuarios, ¿qué ocurre?
+## No puedo hacer operaciones *Create*, *Update* y *Delete* sobre usuarios, ¿qué ocurre?
 
 Esto se debe a que el UserDao.xml de usuario tiene en las etiquetas `<GeneratedKey>USER_</GeneratedKey>`, esto solo sirve si el campo **USER_** es autogenerado, que no es el caso de *User*. Para que funcione hay que eliminar esas etiquetas.
 
-### No me funciona la parte de Insertar una nueva entidad en el frontal, la vista me funciona mal
+## No me funciona la parte de Insertar una nueva entidad en el frontal, la vista me funciona mal
 
 Esto se debe a que en el router nunca debe de aparecer el **:ID** antes del **new**, como véis en el siguiente ejemplo:
 
@@ -72,7 +70,7 @@ const routes: Routes = [
 }];
 ```
 
-### ¿Cómo hacer los permisos?
+## ¿Cómo hacer los permisos?
 
 Para gestionar permisos se puede ver la siguiente documentación:
 
@@ -162,7 +160,7 @@ Ahora tenemos que crear la implementación en el MODEL. Aquí está un pequeño 
 Con esto ya debería funcionaros. Ahora cada vez que queráis cambiar los permisos tenéis que modificar el objeto de permisos que hayáis insertado en la base de datos
 tal y como está definido en [este enlace](https://ontimizeweb.github.io/docs/v8/guide/permissions/).
 
-### Bug con VSCode y npm start
+## Bug con VSCode y npm start
 
 Cuando se lanza la aplicación de Angular puede que se queden archivos corruptos al hacer un `npm start` o `npm install` mientras el VSCode está compilando el código, aparece
 abajo a la izquierda del VSCode un icono indicando que se está compilando Angular. Esperar a que acabe el VSCode para después ejecutar desde terminal. 
