@@ -1,3 +1,5 @@
+# BOOTCAMP FULLSTACK 2022
+
 ## ¿Cómo generar un proyecto base?
 
 Esto debería hacerlo SOLO UNA PERSONA del equipo con todo el equipo presente y una vez terminado el resto podrán clonar el repositorio
