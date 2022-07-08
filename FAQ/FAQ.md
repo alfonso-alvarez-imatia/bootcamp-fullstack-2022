@@ -77,7 +77,7 @@ Para gestionar permisos se puede ver la siguiente documentación:
 - [¿Cómo hacer que empiecen a funcionar los permisos de Ontimize?](https://ontimizeweb.github.io/docs/v8/guide/appconfig/#application-configuration)
 - [Explicación permisos Ontimize](https://ontimizeweb.github.io/docs/v8/guide/permissions/)
 
-Hay varios pasos para que funcionen los permisos (si tenéis dudas el grupo de RitaPOP ya es experto ;) ). El primero de todos es
+Hay varios pasos para que funcionen los permisos (si tenéis dudas el grupo de RitaPOP ya es experto ;) ). Lo primero de todos es
 hacer que el frontal consulte los permisos de nuestro backend, para eso tenemos que cambiar nuestro app.config.ts y meter la configuración necesaria.
 
 ```json
